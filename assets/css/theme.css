@@ -63,6 +63,28 @@
 * Footer
 */ 
 
+@font-face {
+	font-family: 'mainFont';
+	src: url('../fonts/font-richie.ttf');
+}
+
+@font-face {
+	font-family: 'mainFontBold';
+	src: url('../fonts/font-richie.ttf');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'arFont';
+	src: url('../fonts/main-light.ttf');
+}
+
+/* ------------------------------------------------------------- *
+ * CUSTOM CSS for AR
+/* ------------------------------------------------------------- */
+.ar_ {
+	font-family: 'arFont' !important;
+}
 
 
 /* ------------------------------------------------------------- *
@@ -193,7 +215,7 @@ hr {
 /* Body font
 ============= */
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'mainFont';
 }
 
 
@@ -229,7 +251,7 @@ body {
 .tt-scrolling-text,
 #blog-list.bli-compact .bli-info::before,
 .blog-interactive-item::before {
-	font-family: 'Tajawal', sans-serif;
+	font-family: 'mainFont';
 }
 
 
@@ -1379,7 +1401,14 @@ body.tt-smooth-scroll.tt-ol-menu-open .scrollbar-track {
 	line-height: 1.2;
 	color: #eaeaea;
 	transition: opacity 0.3s ease-in-out;
+	font-family: 'mainFontBold' !important;
 }
+.tt-ol-menu-list > li > a:hover,
+.tt-ol-menu-list > li:hover > .tt-ol-submenu-trigger > a:hover {
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+} 
 
 /* Overlay menu list hover/active (master parent). Note: no effect on mobile devices! */
 body:not(.is-mobile) .tt-ol-menu-list.tt-ol-menu-hover > li > a,
