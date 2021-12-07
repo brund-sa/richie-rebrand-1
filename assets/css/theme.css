@@ -84,12 +84,55 @@
 /* ------------------------------------------------------------- */
 .ar_ {
 	font-family: 'arFont' !important;
+	direction: rtl;
+	text-align: right;
 }
+
+.ar_left {
+	font-family: 'arFont' !important;
+	direction: rtl;
+	text-align: left;
+}
+
+.ar_center {
+	font-family: 'arFont' !important;
+	direction: rtl;
+	text-align: center;
+}
+
+
 
 .desc_proj {
-	
+	opacity: 0;
 }
 
+#lang_ {
+	width: 40px;
+    height: 40px;
+    background: #000;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 53px -3px rgb(255 255 255 / 14%);
+    -webkit-box-shadow: 2px 2px 53px -3px rgb(255 255 255 / 20%);
+    -moz-box-shadow: 2px 2px 53px -3px rgba(255,255,255,0.14);
+    position: fixed;
+    z-index: 99;
+    right: 70px;
+    top: 92px;
+    font-size: 13px;
+}
+
+@media (max-width: 991px) {
+	#lang_ {
+		left: 10px;
+    	top: 93%;
+	}
+}
 /* ------------------------------------------------------------- *
  * General
 /* ------------------------------------------------------------- */
